@@ -10,30 +10,30 @@ head
   title Akarsh Portfolio
 .body-container
   .message-me-popup 
-    a(href="#contact-target") Contact
+    a(href="#contact") Contact
   header.header
     .header-extra
       | Leetcode solved - 
-      span *
+      span **
       |  Codechef solved - 
-      span *
+      span **
     .header-container
       .name-container
         p.name Hi there &#x1F44B;
       nav.nav-list-items-container
         ul.nav-list-items
           li
-            a.nav-link(href='#') Home
+            a.nav-link(href='#') Me
           li
-            a.nav-link(href='#') About
+            a.nav-link(href='/pdf/my-resume.pdf') Resume
           li
-            a.nav-link(href='#') Skills
+            a.nav-link(href='#skill') Skill
           li
-            a.nav-link(href='#') Services
+            a.nav-link(href='#project') Project
           li
-            a.nav-link(href='#') Portfolio
+            a.nav-link(href='#') Research
           li
-            a.nav-link(href='#') Contact
+            a.nav-link(href='#contact') Contact
           li
             button.nav-button
               svg.nav-button-icon.light-mode(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#000000' viewbox='0 0 256 256')
@@ -50,7 +50,7 @@ head
               a(target='_blank' href='https://github.com/akarshrajput')
                 svg.social-icon.icon--2(xmlns='http://www.w3.org/2000/svg' fill='#000000' viewbox='0 0 256 256')
                   path(d='M212.62,75.17A63.7,63.7,0,0,0,206.39,26,12,12,0,0,0,196,20a63.71,63.71,0,0,0-50,24H126A63.71,63.71,0,0,0,76,20a12,12,0,0,0-10.39,6,63.7,63.7,0,0,0-6.23,49.17A61.5,61.5,0,0,0,52,104v8a60.1,60.1,0,0,0,45.76,58.28A43.66,43.66,0,0,0,92,192v4H76a20,20,0,0,1-20-20,44.05,44.05,0,0,0-44-44,12,12,0,0,0,0,24,20,20,0,0,1,20,20,44.05,44.05,0,0,0,44,44H92v12a12,12,0,0,0,24,0V192a20,20,0,0,1,40,0v40a12,12,0,0,0,24,0V192a43.66,43.66,0,0,0-5.76-21.72A60.1,60.1,0,0,0,220,112v-8A61.5,61.5,0,0,0,212.62,75.17ZM196,112a36,36,0,0,1-36,36H112a36,36,0,0,1-36-36v-8a37.87,37.87,0,0,1,6.13-20.12,11.65,11.65,0,0,0,1.58-11.49,39.9,39.9,0,0,1-.4-27.72,39.87,39.87,0,0,1,26.41,17.8A12,12,0,0,0,119.82,68h32.35a12,12,0,0,0,10.11-5.53,39.84,39.84,0,0,1,26.41-17.8,39.9,39.9,0,0,1-.4,27.72,12,12,0,0,0,1.61,11.53A37.85,37.85,0,0,1,196,104Z')
-              a(target='_blank' href='https://yourdocs.cloud')
+              a(target='_blank' href='https://openminder.up.railway.app/')
                 svg.social-icon.icon--3(xmlns='http://www.w3.org/2000/svg' fill='#000000' viewbox='0 0 256 256')
                   path(d='M216,36H40A20,20,0,0,0,20,56V200a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A20,20,0,0,0,216,36Zm-4,24V84H44V60ZM44,196V108H212v88Z')
             .main-text-intro
@@ -59,13 +59,13 @@ head
               p.about-me I am a Full-Stack developer, expert in making APIs and applications using Node.js with both SQL and NOSQL databases using MongoDB and PostgreSQL.
               a.my-email(href='mailto:akarshrajput.01@gmail.com') akarshrajput.01@gmail.com
               .main-text-intro-flex-items
-                a(href='https://www.linkedin.com/in/akarshrajput/') LinkedIn
-                a(href='https://github.com/akarshrajput') Github
-                a(href='https://twitter.com/imakarshrajput') Twitter
-                a(href='https://youtube.com/@codeinpc') YouTube
-                a(href='https://www.instagram.com/akarssh___/') Instagram
-                a(href='https://leetcode.com/akarshrajput/') Leetcode
-                a(href='https://www.codechef.com/users/akarshrajput') Codechef
+                a(href='https://www.linkedin.com/in/akarshrajput/' target='_blank') LinkedIn
+                a(href='https://github.com/akarshrajput' target='_blank') Github
+                a(href='https://twitter.com/imakarshrajput' target='_blank') Twitter
+                a(href='https://youtube.com/@codeinpc' target='_blank') YouTube
+                a(href='https://www.instagram.com/akarssh___/' target='_blank') Instagram
+                a(href='https://leetcode.com/akarshrajput/' target='_blank') Leetcode
+                a(href='https://www.codechef.com/users/akarshrajput' target='_blank') Codechef
               //
                 <a class="contact-me" href="#"
                 ><p>Contact</p>
@@ -100,7 +100,7 @@ head
         </div>
     section.skill-section
       .skill-container
-        h1 Skills
+        h1(id="skill") Skills
         p My Technical Level
       .my-skills-content
         .common-skill-type
@@ -126,24 +126,24 @@ head
     section.about-me-section
       .about-me-container
         .about-me-header
-          h1 My work
+          h1(id="project") My work
           p Projects
       .about-me-grid
         div
           .image-grid
-            a(href='https://openminder.up.railway.app/')
-              img.project-image(src='img/projects/project-1.png')
-            a(href='https://yourdocs.cloud/')
+            a(href='https://openminder.up.railway.app/' target='_blank')
+              img.project-image(src='img/projects/project-1.png' )
+            a(href='https://yourdocs.cloud/' target='_blank')
               img.project-image(src='img/projects/project-2.png')
-            a(href='https://yourdocs.cloud/source/')
+            a(href='https://yourdocs.cloud/source/' target='_blank')
               img.project-image(src='img/projects/project-3.png')
-            a(href='https://itbp10bn.netlify.app/')
+            a(href='https://itbp10bn.netlify.app/' target='_blank')
               img.project-image(src='img/projects/project-4.png')
         .text-grid
           p.text-grid-info
             | My proficiency in programming languages such as HTML, CSS,
-            | JavaScript, Python, PHP, frameworks like Node.js, React.js,
-            | Express.js and Vue.js and strong knowledge of SQL, NOSQL,
+            | JavaScript, Python, frameworks like Node.js and React,
+            | and strong knowledge of SQL, NOSQL,
             | MongoDB enable me to build responsive and dynamic websites that
             | are optimized for both User Experience and Customer
             | satisfaction.
@@ -171,7 +171,7 @@ head
     section.contact
       .contact-content
         .contact-container
-          h1(id="contact-target") Contact me
+          h1(id="contact") Contact me
           p Get in Touch
         .contact-grid
           // <div class="contact-text"></div>
