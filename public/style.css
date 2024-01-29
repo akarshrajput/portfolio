@@ -16,6 +16,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
 /* /////////////////////////////////////////// */
 /* Contact popup */
 .message-me-popup {
