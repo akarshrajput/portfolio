@@ -26,9 +26,10 @@ a {
   position: fixed;
   bottom: 2rem;
   right: 4rem;
-  background-color: #d0bfff;
+  background-color: #40c057;
+  color: #fff;
   border-radius: 0.4rem;
-  border: 2px solid #b197fc;
+  /* border: 2px solid #b197fc; */
   z-index: 100;
 }
 .message-me-popup a {
