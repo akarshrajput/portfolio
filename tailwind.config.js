@@ -7,6 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        grid: "grid 15s linear infinite",
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
+      },
+      keyframes: {
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
