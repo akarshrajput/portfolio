@@ -10,7 +10,7 @@ export default function Home() {
       <div className="grid grid-cols-2 gap-2 z-10">
         <Rank />
       </div>
-      <RetroGrid />
+      <RetroGrid className="fixed" />
     </div>
   );
 }

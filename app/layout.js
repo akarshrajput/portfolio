@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="text-slate-700 w-full mx-auto my-0">
-          <div className="sticky top-0 bg-white z-10">
+          <div className="sticky top-0 bg-white z-20">
             <Header />
           </div>
           <div>{children}</div>
